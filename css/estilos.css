@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&display=swap');
+
+
+* {box-sizing: border-box;}
+
+body{
+    font-family: "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+header, footer{
+    background-image: url(../imagenes/textura.jpg);
+    background-repeat: no-repeat;
+    background-size: 1920px 1920px;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 100px;
+}
+
+header{
+    padding: 5px;
+}
+
+h1 {
+    color: #fff9f2;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    animation-name: animacionPortfolio;
+    animation-duration: 6s; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes animacionPortfolio {
+    0% {
+        transform: translateX(950px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(950px);
+    }
+}
+
+h2{
+   text-align: center;
+   font-size: 20px;
+   margin-top: 30px;
+
+    animation-name: animacionNombre;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animacionNombre{
+
+    100%{
+        color: #0425f9;
+    }
+
+    0%{
+        color: #fff9f2;
+    }
+}
+
+.contenedor-links {
+    display: flex;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.link {
+    text-decoration: none;
+    text-align: center;
+    background-color: #0425f9;
+    color:#fff9f2;
+    display: inline-block;
+    width: 220px;
+    line-height: 20px;
+    border-radius: 20px;
+    margin:10px; 
+    transition: background-color 80ms, transform 1s;
+}
+
+.link:hover {
+    color: #0425f9;
+    background-color: #fff9f2;
+    border: 2px solid #0425f9;
+    transform: scale(1.1);
+}
+
+div {   
+    width: 25%;   
+ }
+
+img { 
+    width: 100%; 
+    border-width: 5px;
+    border-radius: 50px;   
+}
+    
+main{
+    width: 70%;
+    margin: auto; 
+    margin-top: 30px;  
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap;  
+}
+
+main div img:hover {
+    transform: scale(1.05); 
+}
+    
+
+video{
+    width: 20%;
+    display:block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+}
+
+video:hover{
+    border: solid #0425f9;
+    border-width: 5px;
+}
+
+footer {
+    margin-top: 30px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 5px; 
+}
+
+footer p {
+    color: #fff9f2;
+    margin-left: 30px; 
+}
+
+footer img {
+    width: 80px; 
+    height: auto; 
+}
